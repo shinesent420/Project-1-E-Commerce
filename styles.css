@@ -76,11 +76,11 @@ li {
 }
 
 header {
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
 }
 
 .header__container {
-    width: 100%;
+   width: 100%;
    max-width: 720px;
    margin: 0 auto;
    height: 100%;
@@ -222,6 +222,7 @@ FEATURES
 
 .books {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .book {
