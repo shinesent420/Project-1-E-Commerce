@@ -99,10 +99,16 @@ li {
     right: 0;
     bottom: 0;
     z-index: 100;
-    display: flex;
+   /* display: flex; */
     justify-content: center;
     align-items: center;
+    display: none;
 }
+
+.menu--open .menu--backdrop {
+    display: flex;
+}
+
 .menu__links {
     display: flex;
     flex-direction: column;
@@ -381,4 +387,10 @@ footer {
 
 .footer__link {
     padding: 0 8px;
+}
+
+@media (max-width: 550px;) {
+    .nav__links {
+        display: none;
+    }
 }
